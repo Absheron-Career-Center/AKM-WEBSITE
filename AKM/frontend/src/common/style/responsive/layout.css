@@ -1,0 +1,51 @@
+@media (max-width: 767px) {
+    .Nav-Primary-Last-Section {
+        display: none !important;
+        flex-direction: column;
+        align-items: start !important;
+        position: absolute;
+        top: 70%;
+        left: 0;
+        width: 100%;
+
+        background: var(--white-color);
+        padding: var(--safe-place);
+        box-shadow: var(--main-shadow);
+        z-index: -1;
+        border-bottom-left-radius: var(--main-radius);
+        border-bottom-right-radius: var(--main-radius);
+        /* gap: 50% !important; */
+        height: fit-content;
+        animation: fade-in-down 0.7s ease 1;
+        -webkit-animation: fade-in-down 0.7s ease 1;
+    }
+
+    .Nav-Primary-Last-Section.Open {
+        display: flex !important;
+        height: 25rem !important;
+        /* max-height: 100%; */
+    }
+
+    .Hamburger-Menu {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    .Main-Text-Accessibility {
+        font-size: 16px;
+    }
+
+    .Nav-Primary-First-Section,
+    .Nav-Primary-Last-Section {
+        gap: 1rem;
+    }
+
+    .Nav-Item img {
+        height: 30px;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1024px) {}

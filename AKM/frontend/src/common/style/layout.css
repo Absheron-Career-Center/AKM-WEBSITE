@@ -1,0 +1,142 @@
+.Navbar-Group {
+    margin-inline: var(--safe-place);
+    padding: var(--safe-place) 0 0 0;
+    background-color: transparent;
+    position: fixed;
+    width: calc(100% - 40px);
+
+
+}
+
+.Navbar-Group::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 110px;
+    background-color: var(--background-color);
+    filter: blur(10px);
+    z-index: -1;
+    border-radius: inherit;
+    -webkit-filter: blur(10px);
+}
+
+.Nav-hr {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100% !important;
+}
+
+.Primary-Navbar {
+    background-color: var(--white-color);
+    width: calc(100% - 40px);
+    border-radius: 0 0 var(--main-radius) var(--main-radius);
+    height: 75px;
+    display: flex;
+    align-items: center;
+    padding-inline: var(--safe-place);
+    box-shadow: var(--main-shadow);
+    position: fixed;
+    z-index: 10;
+    justify-content: space-between;
+    animation: fade-in-down 0.7s ease 1;
+    -webkit-animation: fade-in-down 0.7s ease 1;
+}
+
+
+.Secondary-Navbar {
+    position: relative;
+    background-color: var(--white-color);
+    border-radius: var(--main-radius) var(--main-radius) 0 0;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    padding-inline: var(--safe-place);
+    box-shadow: var(--main-shadow);
+    justify-content: space-between;
+    animation: fade-in-down 0.7s ease 1;
+    -webkit-animation: fade-in-down 0.7s ease 1;
+}
+
+/* .Primary-Navbar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, red 85%, transparent 90%);
+  filter: blur(8px);
+  transform: scale(1.1); 
+  z-index: -1;
+  opacity: 1;
+} */
+
+.Primary-Navbar {
+    transition: top 0.3s ease, border-radius 0.3s ease;
+    top: 55px;
+}
+
+.Primary-Navbar.Scrolled {
+    top: 20px;
+    border-radius: var(--main-radius);
+}
+
+.Secondary-Navbar {
+    transition: opacity 0.3s ease;
+}
+
+.Hidden-Secondary {
+    opacity: 0;
+    background-color: var(--background-color);
+    pointer-events: none;
+    border-radius: var(--main-radius);
+    -webkit-border-radius: var(--main-radius);
+    -moz-border-radius: var(--main-radius);
+    -ms-border-radius: var(--main-radius);
+    -o-border-radius: var(--main-radius);
+}
+
+.Nav-Primary-First-Section,
+.Nav-Primary-Last-Section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 2rem;
+    font-size: var(--font-14px);
+}
+
+.Nav-Secondary-First-Section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 1.5rem;
+}
+
+.Nav-Secondary-Last-Section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 1rem;
+}
+
+.Logo-Mark {
+    height: 65px !important;
+    width: auto;
+}
+
+.Nav-Primary-Last-Section .hr {
+    display: none;
+}
+
+.Hamburger-Menu {
+    display: none;
+    cursor: pointer;
+    animation: fade-in-down 0.7s ease 1;
+    -webkit-animation: fade-in-down 0.7s ease 1;
+
+}
+

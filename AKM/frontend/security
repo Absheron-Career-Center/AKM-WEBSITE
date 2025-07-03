@@ -1,0 +1,107 @@
+# Security Policy for Absheron Career Center Codebase
+
+## Introduction
+
+Absheron Logistic Center Subsidiaries (“we,” “us,” or “our”) prioritize the security and integrity of our Absheron Career Center platform (https://career.absheronport.az/) and its underlying codebase. This document outlines the security policies, procedures, and responsible disclosure guidelines that govern vulnerability management for this repository.
+
+We seek to foster a collaborative and secure environment by encouraging responsible security reporting and transparency while protecting the confidentiality and safety of our users and infrastructure.
+
+---
+
+## Scope
+
+This Security Policy applies to:
+
+- The Absheron Career Center source code hosted in this repository.
+- Associated infrastructure and deployment environments.
+- Any third-party dependencies or integrations critical to platform security.
+
+---
+
+## Reporting a Security Vulnerability
+
+If you identify a security vulnerability or suspect a potential exploit affecting the Absheron Career Center codebase or platform, please report it immediately to our dedicated security team by emailing:
+
+
+### Required Information
+
+To facilitate swift assessment and remediation, please provide:
+
+- Detailed description of the vulnerability.
+- Steps to reproduce or demonstrate the issue.
+- Potential impact and scope of affected components.
+- Proof of concept or exploit code, if available.
+- Your preferred contact details for follow-up questions.
+
+---
+
+## Responsible Disclosure Process
+
+We request that reporters:
+
+- Refrain from publicly disclosing the vulnerability until a fix or mitigation has been implemented.
+- Coordinate disclosure timelines with our security team.
+
+---
+
+## Our Response and Resolution Workflow
+
+1. **Acknowledgment:** We commit to acknowledging vulnerability reports within **3 business days** of receipt.
+
+2. **Initial Assessment:** Security analysts will evaluate the severity, exploitability, and potential impact of the issue.
+
+3. **Remediation Planning:** We prioritize fixing critical and high-severity issues, targeting a resolution timeline consistent with industry best practices.
+
+4. **Patch Deployment:** Upon resolution, patches or updates will be released publicly, accompanied by advisory notes if applicable.
+
+5. **Public Disclosure:** Where appropriate, we may publicly credit the researcher and provide vulnerability summaries, respecting any anonymity requests.
+
+6. **Continuous Improvement:** Post-incident reviews will be conducted to enhance our security posture.
+
+---
+
+## Supported Versions and Updates
+
+Security support covers the **current stable release** and **actively maintained branches** of the Absheron Career Center codebase. Deprecated or unmaintained versions may not receive security patches.
+
+---
+
+## Security Controls and Best Practices
+
+Our platform incorporates comprehensive security measures including, but not limited to:
+
+- Secure coding standards following OWASP Top 10 guidelines.
+- Continuous integration pipelines with automated security scanning.
+- Regular third-party dependency audits and updates.
+- Encryption of sensitive data at rest and in transit (TLS 1.2+).
+- Role-based access control (RBAC) and principle of least privilege.
+- Multi-factor authentication (MFA) for administrative access.
+- Centralized logging, monitoring, and incident detection systems.
+- Periodic internal and external penetration testing.
+
+---
+
+## Incident Management
+
+In the event of a security incident:
+
+- Immediate containment and mitigation measures will be enacted.
+- Stakeholders and affected parties will be notified in accordance with applicable laws and regulations.
+- For incidents involving personal data, compliance with data protection laws such as GDPR or local legislation will be ensured.
+
+---
+
+## Limitations and Disclaimers
+
+Despite our rigorous security efforts, no system is impervious to risk. Users and contributors are advised to:
+
+- Keep software dependencies up to date.
+- Follow best practices when deploying or customizing the codebase.
+- Report any suspicious activities promptly.
+
+---
+
+## Contact and Support
+
+For all security-related communications, please use:
+

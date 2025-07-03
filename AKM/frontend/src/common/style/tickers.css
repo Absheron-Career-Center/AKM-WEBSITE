@@ -1,0 +1,65 @@
+.Ticker-Group {
+    display: flex;
+    position: relative;
+    align-items: center;
+    gap: 0.5rem;
+
+}
+
+.Ticker-Call {
+    animation: fade-in-down 1.2s ease 1;
+    -webkit-animation: fade-in-down 1.2s ease 1;
+}
+
+.Ticker-News {
+    animation: fade-in-down-30 1.4s ease 1;
+    -webkit-animation: fade-in-down-30 1.4s ease 1;
+}
+
+.Ticker-Vacancy {
+    animation: fade-in-down-40 1.8s ease 1;
+    -webkit-animation: fade-in-down-40 1.8s ease 1;
+}
+
+.Ticker-Language {
+    animation: fade-in-down-50 2s ease 1;
+    -webkit-animation: fade-in-down-50 2s ease 1;
+}
+
+.Ticker-Theme {
+    animation: fade-in-down-60 2.3s ease 1;
+    -webkit-animation: fade-in-down-60 2.3s ease 1;
+}
+
+.Ticker-Group p {
+    font-size: var(--font-12px);
+}
+
+.Ticker-Group:hover .Main-Popup {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    animation: fade-in-down 0.7s ease 1;
+    -webkit-animation: fade-in-down 0.7s ease 1;
+}
+
+.Ticker-Group:hover img,
+.Ticker-Group:hover p {
+    cursor: pointer;
+    filter: var(--primary-color-filter);
+    -webkit-filter: var(--primary-color-filter);
+}
+
+.Ticker-trigger {
+    display: flex;
+}
+
+.Ticker-Call .Call-Link {
+    font-size: var(--font-12px);
+    color: var(--black-color);
+    text-decoration: none;
+}
+
+.Ticker-Call:hover .Call-Link {
+    color: var(--primary-color);
+}

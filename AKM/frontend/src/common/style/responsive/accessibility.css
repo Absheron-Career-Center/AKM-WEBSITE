@@ -1,0 +1,13 @@
+@media screen and (max-width: 767px) {
+    .Main-Text-Accessibility {
+        font-size: 24px !important;
+        font-weight: 600;
+    }
+
+    .Main-Text-Accessibility-Button {
+        font-size: 20px !important;
+    }
+}
+
+
+@media screen and (min-width: 767px) and (max-width: 1024px) {}
