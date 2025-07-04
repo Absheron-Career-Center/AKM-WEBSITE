@@ -6,7 +6,7 @@ const ContactItem = () => {
   const { translations } = useLanguage();
   return (
     <div className='Main-Text-Accessibility'>
-      <Link to="/contact">{translations.contactItem}</Link></div>
+      <Link to="/contact" className='Link'>{translations.contactItem}</Link></div>
   )
 }
 

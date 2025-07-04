@@ -7,6 +7,7 @@
 @import url('./tickers.css');
 @import url('./item.css');
 @import url('./accessibility.css');
+@import url('./form.css');
 
 * {
     margin: 0;

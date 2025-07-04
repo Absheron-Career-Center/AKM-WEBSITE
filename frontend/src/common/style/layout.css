@@ -4,6 +4,7 @@
     background-color: transparent;
     position: fixed;
     width: calc(100% - 40px);
+    z-index:10 ;
 
 
 }

@@ -38,13 +38,13 @@ const OpportunityItem = () => {
             {isOpen && (
                 <div className="Main-Popup Main-Popup-Center">
                     <div className='Popup-Item'>
-                        <Link to="/vacancy"> <p className='Main-Text-Accessibility'>{translations.vacancy}</p></Link>
+                        <Link to="/vacancy" className='Link'> <p className='Main-Text-Accessibility'>{translations.vacancy}</p></Link>
                     </div>
                     <div className='Popup-Item'>
-                        <Link to="/scholarship"><p className='Main-Text-Accessibility'>{translations.scholarshipProgram}</p></Link>
+                        <Link to="/scholarship" className='Link'><p className='Main-Text-Accessibility'>{translations.scholarshipProgram}</p></Link>
                     </div>
                     <div className='Popup-Item'>
-                        <Link to="/internship"><p className='Main-Text-Accessibility'>{translations.internshipProgram}</p></Link>
+                        <Link to="/internship" className='Link'><p className='Main-Text-Accessibility'>{translations.internshipProgram}</p></Link>
                     </div>
                 </div>
             )}

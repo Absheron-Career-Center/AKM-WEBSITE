@@ -1,6 +1,3 @@
-
-
-
 import React, { useEffect, useState } from 'react';
 import '../../../common/style/root.css';
 import MainButton from '../../elements/buttons';
@@ -17,10 +14,13 @@ import BlogPostItem from '../../elements/sections/blogPost';
 import ContactItem from '../../elements/sections/contact';
 import OpenNavbar from '../../../assets/svg/open.svg';
 import CloseNavbar from '../../../assets/svg/close.svg';
+import { Link } from 'react-router';
 
-const Navbar = () => {
+const Navbar = ({ isAuthenticated, onLogout }) => {
     const [scrolled, setScrolled] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
+    const userData = JSON.parse(localStorage.getItem('userData') || '{}');
+    const isAdmin = ['admin', 'master-admin'].includes(userData?.role);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -62,6 +62,7 @@ const Navbar = () => {
                         <img
                             src={menuOpen ? CloseNavbar : OpenNavbar}
                             className="Hamburger-Icon"
+                            alt="Menu"
                         />
                     </div>
 
@@ -71,7 +72,23 @@ const Navbar = () => {
                         <ActivitiesItem />
                         <BlogPostItem />
                         <ContactItem />
-                        <MainButton />
+                        
+           
+                        {isAuthenticated && (
+                            <>
+                                {isAdmin ? (
+                                    <Link to="/admin" className="Link">
+                                        <p>Admin panel</p>
+                                    </Link>
+                                ) : (
+                                    <Link to="/user" className="Link">
+                                      <p>My profile</p>
+                                    </Link>
+                                )}
+                            </>
+                        )}
+                        
+                        <MainButton isAuthenticated={isAuthenticated} onLogout={onLogout} />
                     </div>
                 </div>
             </div>

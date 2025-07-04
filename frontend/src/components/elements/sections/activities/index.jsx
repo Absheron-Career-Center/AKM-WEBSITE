@@ -35,10 +35,10 @@ const ActivitiesItem = () => {
             {isOpen && (
                 <div className="Main-Popup Main-Popup-Center">
                     <div className='Popup-Item'>
-                        <Link to="/exhibitions"><p className='Main-Text-Accessibility'>{translations.exhibitions}</p></Link>
+                        <Link to="/exhibitions" className='Link'><p className='Main-Text-Accessibility'>{translations.exhibitions}</p></Link>
                     </div>
                     <div className='Popup-Item'>
-                        <Link to="/events"><p className='Main-Text-Accessibility'>{translations.events}</p></Link>
+                        <Link to="/events" className='Link'><p className='Main-Text-Accessibility'>{translations.events}</p></Link>
                     </div>
                 </div>
             )}

@@ -35,13 +35,13 @@ const BlogPostItem = () => {
             {isOpen && (
                 <div className="Main-Popup Main-Popup-Center">
                     <div className='Popup-Item'>
-                        <Link to="/logistics"><p className='Main-Text-Accessibility'>{translations.logistics}</p></Link>
+                        <Link to="/logistics" className='Link'><p className='Main-Text-Accessibility'>{translations.logistics}</p></Link>
                     </div>
                     <div className='Popup-Item'>
-                        <Link to="/hr"><p className='Main-Text-Accessibility'>{translations.humanResources}</p></Link>
+                        <Link to="/hr" className='Link'><p className='Main-Text-Accessibility'>{translations.humanResources}</p></Link>
                     </div>
                     <div className='Popup-Item'>
-                        <Link to="/finance"><p className='Main-Text-Accessibility'>{translations.finance}</p></Link>
+                        <Link to="/finance" className='Link'><p className='Main-Text-Accessibility'>{translations.finance}</p></Link>
                     </div>
                 </div>
             )}

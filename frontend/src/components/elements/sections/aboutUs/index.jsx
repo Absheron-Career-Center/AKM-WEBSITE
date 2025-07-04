@@ -6,7 +6,7 @@ const AboutUsItem = () => {
 
     return (
         <div className='Main-Text-Accessibility'>
-            <Link to="/about">{translations.aboutUsItem}</Link>
+            <Link className='Link' to="/about">{translations.aboutUsItem}</Link>
         </div>
     )
 }
