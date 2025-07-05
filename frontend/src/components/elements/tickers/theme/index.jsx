@@ -73,19 +73,19 @@ const ThemeTicker = () => {
       {isOpen && (
         <div className="Main-Popup Main-Popup-Right">
           <div
-            className={`Popup-Item ${theme === 'dark' ? 'active' : ''}`}
+            className={`Popup-Item ${theme === 'dark' ? 'active' : ''} link-text`}
             onClick={() => handleThemeChange('dark')}
           >
             {translations.darkTheme}
           </div>
           <div
-            className={`Popup-Item ${theme === 'light' ? 'active' : ''}`}
+            className={`Popup-Item ${theme === 'light' ? 'active' : ''} link-text`}
             onClick={() => handleThemeChange('light')}
           >
             {translations.lightTheme}
           </div>
           <div
-            className={`Popup-Item ${theme === 'auto' ? 'active' : ''}`}
+            className={`Popup-Item ${theme === 'auto' ? 'active' : ''} link-text`}
             onClick={() => handleThemeChange('auto')}
           >
             {translations.autoTheme}

@@ -45,49 +45,49 @@ const LanguageTicker = () => {
 {isOpen && (
   <div className="Main-Popup Main-Popup-Right">
     <div
-      className={`Popup-Item ${language === 'en' ? 'active' : ''}`}
+      className={`Popup-Item ${language === 'en' ? 'active' : ''} link-text`}
       onClick={() => handleChange('en')}
     >
       {translations.englishLan}
     </div>
     <div
-      className={`Popup-Item ${language === 'tr' ? 'active' : ''}`}
+      className={`Popup-Item ${language === 'tr' ? 'active' : ''} link-text`}
       onClick={() => handleChange('tr')}
     >
       {translations.turkishLan}
     </div>
     <div
-      className={`Popup-Item ${language === 'ru' ? 'active' : ''}`}
+      className={`Popup-Item ${language === 'ru' ? 'active' : ''} link-text`}
       onClick={() => handleChange('ru')}
     >
       {translations.russianLan}
     </div>
     <div
-      className={`Popup-Item ${language === 'az' ? 'active' : ''}`}
+      className={`Popup-Item ${language === 'az' ? 'active' : ''} link-text`}
       onClick={() => handleChange('az')}
     >
       {translations.azerbaijaniLan}
     </div>
     <div
-      className={`Popup-Item ${language === 'es' ? 'active' : ''}`}
+      className={`Popup-Item ${language === 'es' ? 'active' : ''} link-text`}
       onClick={() => handleChange('es')}
     >
       {translations.spanishLan}
     </div>
     <div
-      className={`Popup-Item ${language === 'zh' ? 'active' : ''}`}
+      className={`Popup-Item ${language === 'zh' ? 'active' : ''} link-text`}
       onClick={() => handleChange('zh')}
     >
       {translations.chineseLan}
     </div>
     <div
-      className={`Popup-Item ${language === 'de' ? 'active' : ''}`}
+      className={`Popup-Item ${language === 'de' ? 'active' : ''} link-text`}
       onClick={() => handleChange('de')}
     >
       {translations.germanLan}
     </div>
     <div
-      className={`Popup-Item ${language === 'fr' ? 'active' : ''}`}
+      className={`Popup-Item ${language === 'fr' ? 'active' : ''} link-text`}
       onClick={() => handleChange('fr')}
     >
       {translations.frenchLan}

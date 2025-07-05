@@ -127,9 +127,9 @@
 }
 
 .Popup-Item {
-  padding-inline: var(--safe-place);
+  /* padding-inline: var(--safe-place); */
   font-size: var(--font-12px);
-  height: var(--popup-inner-height);
+  /* height: var(--popup-inner-height); */
   cursor: pointer;
   transition: all 0.2s;
   background-color: var(--white-color);
@@ -155,10 +155,21 @@
   background: linear-gradient(to bottom right, var(--primary-color), var(--secondary-color));
   color: var(--white-color);
   border: none;
-
 }
 
-.active-icon {
+.link-text {
+  background-color: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--popup-inner-height);
+  padding-inline: var(--safe-place)
+}
+
+.Popup-Item.active .link-text{
+  color: var(--white-color) !important;
+}
+.Item.active ,.active-icon {
   filter: var(--primary-color-filter);
 }
 
