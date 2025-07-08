@@ -11,24 +11,29 @@
     -webkit-animation: fade-in-down 1.2s ease 1;
 }
 
-.Ticker-News {
-    animation: fade-in-down-30 1.4s ease 1;
+.Ticker-Mail {
+  animation: fade-in-down-30 1.4s ease 1;
     -webkit-animation: fade-in-down-30 1.4s ease 1;
 }
 
-.Ticker-Vacancy {
-    animation: fade-in-down-40 1.8s ease 1;
+.Ticker-News {
+      animation: fade-in-down-40 1.8s ease 1;
     -webkit-animation: fade-in-down-40 1.8s ease 1;
 }
 
-.Ticker-Language {
+.Ticker-Vacancy {
     animation: fade-in-down-50 2s ease 1;
     -webkit-animation: fade-in-down-50 2s ease 1;
 }
 
-.Ticker-Theme {
+.Ticker-Language {
     animation: fade-in-down-60 2.3s ease 1;
     -webkit-animation: fade-in-down-60 2.3s ease 1;
+}
+
+.Ticker-Theme {
+    animation: fade-in-down-70 2.6s ease 1;
+    -webkit-animation: fade-in-down-70 2.6s ease 1;
 }
 
 .Ticker-Group p {
@@ -54,12 +59,12 @@
     display: flex;
 }
 
-.Ticker-Call .Call-Link {
+.Ticker-Group .Ticker-Link {
     font-size: var(--font-12px);
     color: var(--black-color);
     text-decoration: none;
 }
 
-.Ticker-Call:hover .Call-Link {
+.Ticker-Group:hover .Ticker-Link {
     color: var(--primary-color);
 }

@@ -8,6 +8,7 @@
   --popup-inner-height: 35px;
   --font-12px: 12px;
   --main-radius: 15px;
+  --max-radius: 1000px;
   --secondary-radius: 8px;
   --main-shadow: 2px 3px 4px 0px var(--opacity-003-black-color);
   --unfocus-shadow: 0px 4px 4px 0px var(--opacity-007-black-color);
@@ -238,4 +239,16 @@
 .animated-6  {
     animation: fade-in-down-70 2.8s ease 1;
     -webkit-animation: fade-in-down-70 2.8s ease 1;
+}
+
+.Main-Outline {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - (1px * 2));
+    height: calc(100% - (1px * 2));
+    pointer-events: none; 
+    border-radius: var(--main-radius);
+    border: 1px solid var( --opacity-050-white-color);
+    box-sizing: content-box; 
 }

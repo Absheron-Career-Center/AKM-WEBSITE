@@ -15,6 +15,8 @@ import HR from '../../components/pages/blog/hr/index.jsx';
 import Finance from '../../components/pages/blog/finance/index.jsx';
 import Logistic from '../../components/pages/blog/logistic/index.jsx';
 import Contact from '../../components/pages/contact/index.jsx';
+import Home from '../../components/pages/home/index.jsx';
+import Error from '../../components/pages/error/index.jsx';
 
 function AppRoutes() {
     const [isAuthenticated, setIsAuthenticated] = useState(
@@ -35,7 +37,8 @@ function AppRoutes() {
         <Router>
             <Navbar isAuthenticated={isAuthenticated} onLogout={handleLogout} />
             <Routes>
-                <Route path="/" />
+                <Route path="/" element={<Home />} />
+                <Route path="*" element={<Error />} />
                 <Route path="/signup" element={<SignupPage onSuccess={handleLogin} />} />
                 <Route path="/login" element={isAuthenticated ? <Navigate to="/admin" /> : <LoginPage onLogin={handleLogin} />} />
                 <Route path="/admin" element={isAuthenticated ? <AdminPage /> : <Navigate to="/login" />} />

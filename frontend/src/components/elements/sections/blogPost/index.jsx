@@ -25,7 +25,7 @@ const BlogPostItem = () => {
     const isActiveRoute = ['/logistics', '/hr', '/finance'].includes(location.pathname);
 
     return (
-        <div className={`Item-Group ${isOpen ? 'active' : ''}`} ref={popupRef}>
+        <div className={`Item-Group ${isOpen ? 'active' : ''} animated-4`} ref={popupRef}>
             <div className={`Nav-Item Item ${isActiveRoute ? 'active' : ''}`} onClick={togglePopup}>
                 <div className='Main-Text-Accessibility'>{translations.blogPostItem}</div>
                 <img

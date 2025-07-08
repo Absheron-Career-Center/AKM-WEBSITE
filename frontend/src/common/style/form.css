@@ -47,8 +47,20 @@
     margin-bottom: var(--safe-place);
 }
 
-.form-text p:last-child  {
+.form-text p:nth-child(2) {
     color: var(--red-color);
+    background-color: var(--red-color-highlight);
+    font-size: var(--font-12px);
+    height: 38px;
+    border-radius: var(--secondary-radius);
+    margin: var(--inner-safe-gap);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding-inline: var(--safe-place);
+    animation: fade-in-down 1.2s ease 1;
+    -webkit-animation: fade-in-down 1.2s ease 1;
+
 }
 
 .form-header p {
@@ -103,8 +115,8 @@
     display: flex;
     gap: var(--inner-safe-gap);
     text-align: center;
-    margin-top: calc(var(--safe-place) * 4);    
-    margin-bottom: var(--safe-place);    
+    margin-top: calc(var(--safe-place) * 4);
+    margin-bottom: var(--safe-place);
     font-size: 14px;
     color: var(--text-color);
 }
@@ -121,20 +133,19 @@
     text-decoration: underline;
 }
 
-
-
-
-
-
-
-
 .error-message {
-    color: #e53e3e;
-    background-color: #fff5f5;
-    padding: 0.75rem;
-    border-radius: 6px;
-    margin-bottom: 1rem;
+    color: var(--red-color);
+    background-color: var(--red-color-highlight);
+    font-size: var(--font-12px);
+    height: 38px;
+    border-radius: var(--secondary-radius);
+    margin-bottom: var(--safe-place);
     text-align: center;
+    display: flex;
+    align-items: center;
+    padding-inline: var(--safe-place);
+    animation: fade-in-down 1.2s ease 1;
+    -webkit-animation: fade-in-down 1.2s ease 1;
 }
 
 .success-message {

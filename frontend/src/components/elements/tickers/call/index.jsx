@@ -5,7 +5,7 @@ const CallTicker = () => {
     return (
         <div className="Ticker-Group Ticker-Call">
             <img src={CallTickerIcon} className="No-Select"/>
-            <a href="tel:+994102322150" className="Call-Link">
+            <a href="tel:+994102322150" className="Ticker-Link">
                 (+994 10) 232-21-50
             </a>
         </div>

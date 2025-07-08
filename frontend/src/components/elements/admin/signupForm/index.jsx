@@ -71,7 +71,7 @@ const SignupForm = () => {
 
     return (
         <div className="Form-Section">
-            <form onSubmit={handleSubmit} className="Form">
+            <form onSubmit={handleSubmit} className="Form" noValidate>
                 <div className="form-header">
                     <p>Sign up a form</p>
                 </div>
@@ -104,6 +104,7 @@ const SignupForm = () => {
                         maxLength={9}
                         placeholder="Number: (+994)"
                         required
+                        
                     />
                 </div>
 

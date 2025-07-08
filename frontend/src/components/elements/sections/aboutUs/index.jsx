@@ -7,7 +7,7 @@ const AboutUsItem = () => {
     const location = useLocation();
 
     return (
-        <div className={`Item ${location.pathname === '/about' ? 'active' : ''}`}>
+        <div className={`Item ${location.pathname === '/about' ? 'active' : ''} animated-1`}>
             <Link className='Link' to="/about">
                 {translations.aboutUsItem}
             </Link>

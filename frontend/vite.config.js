@@ -10,4 +10,5 @@ export default defineConfig({
       '/api': 'http://localhost:8080'
     }
   },
+  assetsInclude: ['**/*.JPG', '**/*.jpg', '**/*.JPEG', '**/*.jpeg', '**/*.PNG', '**/*.png']
 })

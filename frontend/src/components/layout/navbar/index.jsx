@@ -15,6 +15,7 @@ import ContactItem from '../../elements/sections/contact';
 import OpenNavbar from '../../../assets/svg/open.svg';
 import CloseNavbar from '../../../assets/svg/close.svg';
 import { Link } from 'react-router';
+import MailTicker from '../../elements/tickers/mail';
 
 const Navbar = ({ isAuthenticated, onLogout }) => {
     const [scrolled, setScrolled] = useState(false);
@@ -41,6 +42,7 @@ const Navbar = ({ isAuthenticated, onLogout }) => {
                 <div className={`Secondary-Navbar ${scrolled ? 'Hidden-Secondary' : ''}`}>
                     <div className="Nav-Secondary-First-Section">
                         <CallTicker />
+                        <MailTicker />
                         <NewsTicker />
                         <VacancyTicker />
                     </div>
@@ -77,11 +79,11 @@ const Navbar = ({ isAuthenticated, onLogout }) => {
                         {isAuthenticated && (
                             <>
                                 {isAdmin ? (
-                                    <Link to="/admin" className="Link">
+                                    <Link to="/admin" className="Link animated-6">
                                         <p>Admin panel</p>
                                     </Link>
                                 ) : (
-                                    <Link to="/user" className="Link">
+                                    <Link to="/user" className="Link animated-6">
                                       <p>My profile</p>
                                     </Link>
                                 )}

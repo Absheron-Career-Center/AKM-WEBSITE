@@ -7,7 +7,7 @@ const ContactItem = () => {
   const location = useLocation();
 
   return (
-    <div className={`Item ${location.pathname === '/contact' ? 'active' : ''}`}>
+    <div className={`Item ${location.pathname === '/contact' ? 'active' : ''}animated-5`}>
       <Link to="/contact" className='Link'>
         {translations.contactItem}
       </Link>

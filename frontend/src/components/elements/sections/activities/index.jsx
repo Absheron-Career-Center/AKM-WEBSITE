@@ -26,7 +26,7 @@ const ActivitiesItem = () => {
 
     return (
         <div className={`Item-Group ${isOpen ? 'active' : ''}`} ref={popupRef}>
-            <div className={`Nav-Item Item ${isActiveRoute ? 'active' : ''}`} onClick={togglePopup}>
+            <div className={`Nav-Item Item ${isActiveRoute ? 'active' : ''} animated-3`} onClick={togglePopup}>
                 <div className='Main-Text-Accessibility'>{translations.activitiesItem}</div>
                 <img
                     src={ChevronDown}
